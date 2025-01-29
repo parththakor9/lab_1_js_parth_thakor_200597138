@@ -1,0 +1,82 @@
+@charset "utf-8"; /* SPECIFIES THE CHARACTER ENCODING FOR THE CSS FILE */
+
+body {
+    font-family: 'Arial', sans-serif; /* SETS THE FONT TO ARIAL WITH A FALLBACK TO SANS-SERIF */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6347); /* APPLIES A GRADIENT BACKGROUND WITH THREE COLORS */
+    color: #333; /* SETS THE TEXT COLOR TO DARK GREY FOR READABILITY */
+    width: 350px; /* FIXES THE WIDTH OF THE BODY CONTAINER */
+    margin: 0 auto; /* CENTERS THE CONTENT HORIZONTALLY */
+    padding: 20px; /* ADDS PADDING INSIDE THE BODY */
+    border-radius: 10px; /* ROUNDS THE CORNERS OF THE BODY CONTAINER */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* APPLIES A SUBTLE SHADOW FOR A DEPTH EFFECT */
+}
+
+h1 {
+    text-align: center; /* CENTERS THE HEADING TEXT */
+    color: #fff; /* SETS THE HEADING TEXT COLOR TO WHITE */
+    margin-bottom: 20px; /* ADDS SPACE BELOW THE HEADING */
+    font-size: 24px; /* INCREASES THE FONT SIZE OF THE HEADING */
+}
+
+label {
+    font-weight: bold; /* MAKES THE LABEL TEXT BOLD */
+    color: #fff; /* SETS THE LABEL TEXT COLOR TO WHITE */
+    display: block; /* MAKES LABELS BLOCK ELEMENTS TO IMPROVE SPACING */
+    margin-bottom: 5px; /* ADDS SPACE BELOW THE LABEL */
+}
+
+div {
+    padding-bottom: 20px; /* ADDS SPACE BELOW THE DIV ELEMENT */
+}
+
+input[type="text"] {
+    padding: 10px; /* ADDS PADDING INSIDE THE TEXT INPUT */
+    width: calc(100% - 22px); /* SETS THE INPUT WIDTH TO 100% MINUS PADDING AND BORDER */
+    border: 2px solid #fff; /* APPLIES A WHITE BORDER AROUND THE INPUT FIELD */
+    border-radius: 5px; /* ROUNDS THE CORNERS OF THE INPUT FIELD */
+    transition: border-color 0.3s; /* SMOOTH TRANSITION FOR BORDER COLOR CHANGE */
+    font-size: 16px; /* SETS THE FONT SIZE OF THE INPUT TEXT */
+}
+
+input[type="text"]:focus {
+    border-color: #ff6347; /* CHANGES THE BORDER COLOR TO TOMATO WHEN THE INPUT IS FOCUSED */
+    outline: none; /* REMOVES THE DEFAULT OUTLINE WHEN FOCUSED */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* ADDS SPACE TO THE RIGHT OF RADIO BUTTON */
+    accent-color: #ff6347; /* CHANGES THE RADIO BUTTON COLOR TO TOMATO */
+}
+
+button.randomize {
+    background-color: #ff6347; /* SETS THE BUTTON BACKGROUND COLOR TO TOMATO */
+    color: white; /* SETS THE BUTTON TEXT COLOR TO WHITE */
+    padding: 10px 15px; /* ADDS PADDING INSIDE THE BUTTON */
+    border: none; /* REMOVES THE BUTTON BORDER */
+    border-radius: 5px; /* ROUNDS THE BUTTON CORNERS */
+    cursor: pointer; /* CHANGES THE CURSOR TO POINTER ON HOVER */
+    font-size: 16px; /* SETS THE FONT SIZE FOR THE BUTTON TEXT */
+    transition: background-color 0.3s, transform 0.2s; /* SMOOTH TRANSITIONS FOR BACKGROUND COLOR AND BUTTON SCALE */
+    width: 100%; /* MAKES THE BUTTON TAKE UP THE FULL WIDTH OF ITS CONTAINER */
+}
+
+button.randomize:hover {
+    background-color: #ff4500; /* CHANGES THE BUTTON BACKGROUND TO DARKER TOMATO COLOR ON HOVER */
+    transform: scale(1.05); /* SLIGHTLY ENLARGES THE BUTTON ON HOVER */
+}
+
+p.story {
+    background: rgba(255, 193, 37, 0.9); /* SETS A SEMI-TRANSPARENT YELLOW BACKGROUND FOR THE STORY TEXT */
+    color: #5e2612; /* SETS THE STORY TEXT COLOR TO DARK BROWN */
+    padding: 15px; /* ADDS PADDING INSIDE THE STORY PARAGRAPH */
+    visibility: hidden; /* HIDES THE STORY PARAGRAPH INITIALLY */
+    margin-top: 20px; /* ADDS SPACE ABOVE THE STORY PARAGRAPH */
+    border-radius: 5px; /* ROUNDS THE CORNERS OF THE STORY PARAGRAPH */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* APPLIES A SUBTLE SHADOW TO THE STORY PARAGRAPH */
+    transition: visibility 0.3s, opacity 0.3s; /* SMOOTH TRANSITION FOR VISIBILITY AND OPACITY CHANGES */
+}
+
+p.story.visible {
+    visibility: visible; /* MAKES THE STORY VISIBLE WHEN THE 'visible' CLASS IS ADDED */
+    opacity: 1; /* FADES THE STORY IN */
+}
